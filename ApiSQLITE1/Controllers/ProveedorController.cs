@@ -40,40 +40,38 @@ public class ProveedorController : ControllerBase
         return Proveedor;
     }
     [HttpPost("Create")]
-    public async Task<ActionResult<Proveedor>> CrearProveedor(string nombre, string direccion, string telefono, bool status)
+    public async Task<ActionResult<Proveedor>> CrearEmpleado([FromBody] Proveedor nuevoProducto)
     {
-        int estadostatus = status ? 1 : 0;
-
-        var NuevaProveedor = new Proveedor
+        if (nuevoProducto == null)
         {
-            nombre = nombre,
-            direccion = direccion,
-            telefono = telefono,
-            status = estadostatus,
-        };
+            return BadRequest();
+        }
 
-        _context.Proveedor.Add(NuevaProveedor);
+        _context.Proveedor.Add(nuevoProducto);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetProveedorPorId), new { id = NuevaProveedor.idProveedor }, NuevaProveedor);
+        return CreatedAtAction(nameof(GetTodasLosProveedores), new { id = nuevoProducto.idProveedor }, nuevoProducto);
     }
-
 
     // PUT: api/Cliente/UpdateCliente/5
     [HttpPut("Update/{id}")]
-    public async Task<IActionResult> ActualizarProveedor (int id, string nombre, string direccion, string telefono)
+    public async Task<IActionResult> ActualizarCliente(int id, [FromBody] Proveedor actualizadoProducto)
     {
-        var categoria = await _context.Proveedor.FindAsync(id);
+        if (id != actualizadoProducto.idProveedor)
+        {
+            return BadRequest();
+        }
 
-        if (categoria == null)
+        var producto = await _context.Proveedor.FindAsync(id);
+        if (producto == null)
         {
             return NotFound();
         }
 
-        categoria.nombre = nombre;
-        categoria.direccion = direccion;
-        categoria.telefono = telefono;
-
+        producto.nombre = actualizadoProducto.nombre;
+        producto.direccion = actualizadoProducto.direccion;
+        producto.telefono = actualizadoProducto.telefono;
+        producto.status = actualizadoProducto.status;
 
         try
         {

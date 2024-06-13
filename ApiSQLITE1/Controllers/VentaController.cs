@@ -40,38 +40,37 @@ public class VentaController : ControllerBase
         return Venta;
     }
     [HttpPost("Create")]
-    public async Task<ActionResult<Venta>> CrearVenta(string fecha, float total, bool status)
+    public async Task<ActionResult<Venta>> CrearEmpleado([FromBody] Venta nuevoProducto)
     {
-        int estadostatus = status ? 1 : 0;
-
-        var NuevaVenta = new Venta
+        if (nuevoProducto == null)
         {
-            fecha = fecha,
-            total = total,
-            status = estadostatus,
-        };
+            return BadRequest();
+        }
 
-        _context.Venta.Add(NuevaVenta);
+        _context.Venta.Add(nuevoProducto);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetVentaPorId), new { id = NuevaVenta.idVenta }, NuevaVenta);
+        return CreatedAtAction(nameof(GetTodasLasVentas), new { id = nuevoProducto.idVenta }, nuevoProducto);
     }
-
 
     // PUT: api/Cliente/UpdateCliente/5
     [HttpPut("Update/{id}")]
-    public async Task<IActionResult> ActualizarVenta(int id, string fecha, float total)
+    public async Task<IActionResult> ActualizarCliente(int id, [FromBody] Venta actualizadoProducto)
     {
-        var categoria = await _context.Venta.FindAsync(id);
+        if (id != actualizadoProducto.idVenta)
+        {
+            return BadRequest();
+        }
 
-        if (categoria == null)
+        var producto = await _context.Venta.FindAsync(id);
+        if (producto == null)
         {
             return NotFound();
         }
 
-        categoria.fecha = fecha;
-        categoria.total = total;
-
+        producto.fecha = actualizadoProducto.fecha;
+        producto.total = actualizadoProducto.total;
+        producto.status = actualizadoProducto.status;
 
         try
         {
@@ -91,6 +90,7 @@ public class VentaController : ControllerBase
 
         return NoContent();
     }
+
 
     // DELETE: api/Cliente/DeleteCliente/5
     [HttpDelete("Delete/{id}")]

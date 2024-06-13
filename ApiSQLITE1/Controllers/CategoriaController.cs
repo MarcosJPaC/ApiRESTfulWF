@@ -38,39 +38,39 @@ public class CategoriaController : ControllerBase
 
         return cliente;
     }
-    [HttpPost("CreateCategoria")]
-    public async Task<ActionResult<Categoria>> CrearCategoria(string nombre, string descripcion, string estado)
+    [HttpPost("Create")]
+    public async Task<ActionResult<Categoria>> CrearCategoria([FromBody] Categoria nuevoProducto)
     {
-
-        var nuevaCategoria = new Categoria
+        if (nuevoProducto == null)
         {
-            nombre = nombre,
-            descripcion = descripcion,
-            estado = estado,
-            status=1,
-        };
+            return BadRequest();
+        }
 
-        _context.Categoria.Add(nuevaCategoria);
+        _context.Categoria.Add(nuevoProducto);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetCategoriaPorId), new { id = nuevaCategoria.idCategoria }, nuevaCategoria);
+        return CreatedAtAction(nameof(GetCategoriaPorId), new { id = nuevoProducto.idCategoria }, nuevoProducto);
     }
 
-
     // PUT: api/Cliente/UpdateCliente/5
-    [HttpPut("UpdateCategoria/{id}")]
-    public async Task<IActionResult> ActualizarCategoria(int id, string nombre, string descripcion, string estado)
+    [HttpPut("Update/{id}")]
+    public async Task<IActionResult> ActualizarCategoria(int id, [FromBody] Categoria actualizadoProducto)
     {
-        var categoria = await _context.Categoria.FindAsync(id);
+        if (id != actualizadoProducto.idCategoria)
+        {
+            return BadRequest();
+        }
 
-        if (categoria == null)
+        var producto = await _context.Categoria.FindAsync(id);
+        if (producto == null)
         {
             return NotFound();
         }
 
-        categoria.nombre = nombre;
-        categoria.descripcion = descripcion;
-        categoria.estado = estado;
+        producto.nombre = actualizadoProducto.nombre;
+        producto.descripcion = actualizadoProducto.descripcion;
+        producto.estado = actualizadoProducto.estado;
+        producto.status = actualizadoProducto.status;
 
         try
         {
@@ -90,6 +90,7 @@ public class CategoriaController : ControllerBase
 
         return NoContent();
     }
+
 
     // DELETE: api/Cliente/DeleteCliente/5
     [HttpDelete("DeleteCategoria/{id}")]

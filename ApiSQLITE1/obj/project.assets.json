@@ -1645,11 +1645,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\ApiSQLITE1.csproj",
+      "projectUniqueName": "C:\\Users\\Marcos\\Downloads\\finales\\ApiRESTfulWF\\ApiRESTfulWF\\ApiSQLITE1\\ApiSQLITE1.csproj",
       "projectName": "ApiSQLITE1",
-      "projectPath": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\ApiSQLITE1.csproj",
+      "projectPath": "C:\\Users\\Marcos\\Downloads\\finales\\ApiRESTfulWF\\ApiRESTfulWF\\ApiSQLITE1\\ApiSQLITE1.csproj",
       "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\obj\\",
+      "outputPath": "C:\\Users\\Marcos\\Downloads\\finales\\ApiRESTfulWF\\ApiRESTfulWF\\ApiSQLITE1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

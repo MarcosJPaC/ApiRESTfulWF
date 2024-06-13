@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AXX4O4+Vm+G+hMHfpC0W3MMT8cufKOysZVWn/oSesPegh7SIr2Nm2t64wYWxzyQ6NqLOZ0jPyN0ggHgYJeoujQ==",
+  "dgSpecHash": "EGzxQhD6xO35kNEhbBMWtiGYvtKR+bfczCfilxYtBU98RnlKpy+s+ct+pAcG63GuvF5cg0tzKleAZJx4nc6kVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\ApiSQLITE1.csproj",
+  "projectFilePath": "C:\\Users\\Marcos\\Downloads\\finales\\ApiRESTfulWF\\ApiRESTfulWF\\ApiSQLITE1\\ApiSQLITE1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.4\\microsoft.data.sqlite.core.8.0.4.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",

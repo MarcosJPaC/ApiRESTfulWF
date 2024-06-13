@@ -39,39 +39,38 @@ public class EmpleadoController : ControllerBase
         return Empleado;
     }
     [HttpPost("Create")]
-    public async Task<ActionResult<Empleado>> CrearEmpleado(string nombre, string puesto, float salario, bool status)
+    public async Task<ActionResult<Empleado>> CrearEmpleado([FromBody] Empleado nuevoProducto)
     {
-        int estadostatus = status ? 1 : 0;
-
-        var Nuevoempleado = new Empleado
+        if (nuevoProducto == null)
         {
-            nombre = nombre,
-            puesto = puesto,
-            salario = salario,
-            status = estadostatus,
-        };
+            return BadRequest();
+        }
 
-        _context.Empleado.Add(Nuevoempleado);
+        _context.Empleado.Add(nuevoProducto);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetCategoriaPorId), new { id = Nuevoempleado.idEmpleado }, Nuevoempleado);
+        return CreatedAtAction(nameof(GetTodosLosEmpleados), new { id = nuevoProducto.idEmpleado }, nuevoProducto);
     }
-
 
     // PUT: api/Cliente/UpdateCliente/5
     [HttpPut("Update/{id}")]
-    public async Task<IActionResult> ActualizarEmpleado(int id, string nombre, string puesto, float salario)
+    public async Task<IActionResult> ActualizarCliente(int id, [FromBody] Empleado actualizadoProducto)
     {
-        var categoria = await _context.Empleado.FindAsync(id);
+        if (id != actualizadoProducto.idEmpleado)
+        {
+            return BadRequest();
+        }
 
-        if (categoria == null)
+        var producto = await _context.Empleado.FindAsync(id);
+        if (producto == null)
         {
             return NotFound();
         }
 
-        categoria.nombre = nombre;
-        categoria.puesto = puesto;
-        categoria.salario = salario;
+        producto.nombre = actualizadoProducto.nombre;
+        producto.puesto = actualizadoProducto.puesto ;
+        producto.salario = actualizadoProducto.salario;
+        producto.status = actualizadoProducto.status;
 
         try
         {

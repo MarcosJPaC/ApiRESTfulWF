@@ -37,40 +37,39 @@ public class ClienteController : ControllerBase
         return cliente;
     }
     // POST: api/Cliente/CreateCliente
-    [HttpPost("CreateCliente")]
-    public async Task<ActionResult<Cliente>> CreateCliente(string nombre, string direccion, string telefono, bool status)
+    [HttpPost("Create")]
+    public async Task<ActionResult<Cliente>> CrearCliente([FromBody] Cliente nuevoProducto)
     {
-        int estadostatus = status ? 1 : 0;
-
-        var nuevoCliente = new Cliente
+        if (nuevoProducto == null)
         {
-            nombre = nombre,
-            direccion = direccion,
-            telefono = telefono,
-            status = estadostatus,
-        };
+            return BadRequest();
+        }
 
-        _context.Cliente.Add(nuevoCliente);
+        _context.Cliente.Add(nuevoProducto);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetClientePorId), new { id = nuevoCliente.idCliente }, nuevoCliente);
+        return CreatedAtAction(nameof(GetClientePorId), new { id = nuevoProducto.idCliente }, nuevoProducto);
     }
 
-
     // PUT: api/Cliente/UpdateCliente/5
-    [HttpPut("UpdateCliente/{id}")]
-    public async Task<IActionResult> UpdateCliente(int id, string nombre, string direccion, string telefono)
+    [HttpPut("Update/{id}")]
+    public async Task<IActionResult> ActualizarCliente(int id, [FromBody] Cliente actualizadoProducto)
     {
-        var cliente = await _context.Cliente.FindAsync(id);
+        if (id != actualizadoProducto.idCliente)
+        {
+            return BadRequest();
+        }
 
-        if (cliente == null)
+        var producto = await _context.Cliente.FindAsync(id);
+        if (producto == null)
         {
             return NotFound();
         }
 
-        cliente.nombre = nombre;
-        cliente.direccion = direccion;
-        cliente.telefono = telefono;
+        producto.nombre = actualizadoProducto.nombre;
+        producto.direccion = actualizadoProducto.direccion;
+        producto.telefono = actualizadoProducto.telefono;
+        producto.status = actualizadoProducto.status;
 
         try
         {
@@ -90,7 +89,6 @@ public class ClienteController : ControllerBase
 
         return NoContent();
     }
-
     // DELETE: api/Cliente/DeleteCliente/5
     [HttpDelete("DeleteCliente/{id}")]
     public async Task<IActionResult> DeleteCliente(int id)

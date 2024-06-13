@@ -1,14 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\",
+  "WorkspaceRootPath": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marcos\\documents\\github\\apirestful\\apisqlite1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marcos\\documents\\github\\apirestful\\apisqlite1\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|c:\\users\\marco\\source\\repos\\apirestfulwf\\apisqlite1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7026C-5113-4C19-8AFA-DD1DD179CB8B}|ApiSQLITE1.csproj|solutionrelative:producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,15 +50,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentaController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\VentaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VentaController.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\VentaController.cs",
+              "RelativeToolTip": "Controllers\\VentaController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAswIMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:48:27.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\Proveedor.cs",
+              "RelativeDocumentMoniker": "Controllers\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\Proveedor.cs",
+              "RelativeToolTip": "Controllers\\Proveedor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:48:16.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProveedorController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\ProveedorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProveedorController.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\ProveedorController.cs",
+              "RelativeToolTip": "Controllers\\ProveedorController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAowF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:30:39.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Empleado.cs",
+              "RelativeDocumentMoniker": "Empleado.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Empleado.cs",
+              "RelativeToolTip": "Empleado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:18:04.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "Controllers\\EmpleadoController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAgwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:57:16.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwFoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:27:04.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Controllers\\CategoriaController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAswFsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:00:18.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Categoria.cs",
+              "RelativeDocumentMoniker": "Categoria.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Categoria.cs",
+              "RelativeToolTip": "Categoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:00:11.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\Producto.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Producto.cs",
               "RelativeDocumentMoniker": "Producto.cs",
-              "ToolTip": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\Producto.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Producto.cs",
               "RelativeToolTip": "Producto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -35,15 +171,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\Controllers\\ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\Marcos\\Documents\\GitHub\\ApiRestFul\\ApiSQLITE1\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\ApiRESTfulWF\\ApiSQLITE1\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "Controllers\\ProductoController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAmwF4AAAAAAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwDgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T04:48:37.534Z"
+              "WhenOpened": "2024-06-10T04:48:37.534Z",
+              "EditorCaption": ""
             }
           ]
         }
